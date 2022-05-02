@@ -11,6 +11,7 @@ class ProfileContainer extends React.Component {
  
   constructor() {
     let userId = this.props.match.userId;
+    console.log(userId);
     
      if (!userId) {
        userId = '2';
@@ -20,7 +21,7 @@ class ProfileContainer extends React.Component {
   
   render() {
     return ( <div>
-        <Profile {...this.props} profile={this.props.profile}  />
+        <Profile {...this.props} profile={this.props.profile} />
       </div>
     )
   }
