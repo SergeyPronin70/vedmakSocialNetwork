@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vedmakSocialNetwork/static/css/main.ac6f5dcf.css",
-    "main.js": "/vedmakSocialNetwork/static/js/main.cd9414e8.js",
+    "main.js": "/vedmakSocialNetwork/static/js/main.95c69465.js",
     "static/css/672.fdbb6429.chunk.css": "/vedmakSocialNetwork/static/css/672.fdbb6429.chunk.css",
     "static/js/672.504f3c1e.chunk.js": "/vedmakSocialNetwork/static/js/672.504f3c1e.chunk.js",
     "static/css/34.61dd6114.chunk.css": "/vedmakSocialNetwork/static/css/34.61dd6114.chunk.css",
@@ -11,7 +11,7 @@
     "static/media/user.jpg": "/vedmakSocialNetwork/static/media/user.83de2ef67fb2c7724d39.jpg",
     "index.html": "/vedmakSocialNetwork/index.html",
     "main.ac6f5dcf.css.map": "/vedmakSocialNetwork/static/css/main.ac6f5dcf.css.map",
-    "main.cd9414e8.js.map": "/vedmakSocialNetwork/static/js/main.cd9414e8.js.map",
+    "main.95c69465.js.map": "/vedmakSocialNetwork/static/js/main.95c69465.js.map",
     "672.fdbb6429.chunk.css.map": "/vedmakSocialNetwork/static/css/672.fdbb6429.chunk.css.map",
     "672.504f3c1e.chunk.js.map": "/vedmakSocialNetwork/static/js/672.504f3c1e.chunk.js.map",
     "34.61dd6114.chunk.css.map": "/vedmakSocialNetwork/static/css/34.61dd6114.chunk.css.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.ac6f5dcf.css",
-    "static/js/main.cd9414e8.js"
+    "static/js/main.95c69465.js"
   ]
 }
