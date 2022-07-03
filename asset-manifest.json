@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/WitcherApp/static/css/main.ac6f5dcf.css",
-    "main.js": "/WitcherApp/static/js/main.a179b8a8.js",
-    "static/css/672.fdbb6429.chunk.css": "/WitcherApp/static/css/672.fdbb6429.chunk.css",
-    "static/js/672.504f3c1e.chunk.js": "/WitcherApp/static/js/672.504f3c1e.chunk.js",
-    "static/css/34.61dd6114.chunk.css": "/WitcherApp/static/css/34.61dd6114.chunk.css",
-    "static/js/34.6adc80dc.chunk.js": "/WitcherApp/static/js/34.6adc80dc.chunk.js",
-    "static/js/787.9c04a852.chunk.js": "/WitcherApp/static/js/787.9c04a852.chunk.js",
-    "static/media/preloader.gif": "/WitcherApp/static/media/preloader.ef89d5d218352b376d1b.gif",
-    "static/media/user.jpg": "/WitcherApp/static/media/user.83de2ef67fb2c7724d39.jpg",
-    "index.html": "/WitcherApp/index.html",
-    "main.ac6f5dcf.css.map": "/WitcherApp/static/css/main.ac6f5dcf.css.map",
-    "main.a179b8a8.js.map": "/WitcherApp/static/js/main.a179b8a8.js.map",
-    "672.fdbb6429.chunk.css.map": "/WitcherApp/static/css/672.fdbb6429.chunk.css.map",
-    "672.504f3c1e.chunk.js.map": "/WitcherApp/static/js/672.504f3c1e.chunk.js.map",
-    "34.61dd6114.chunk.css.map": "/WitcherApp/static/css/34.61dd6114.chunk.css.map",
-    "34.6adc80dc.chunk.js.map": "/WitcherApp/static/js/34.6adc80dc.chunk.js.map",
-    "787.9c04a852.chunk.js.map": "/WitcherApp/static/js/787.9c04a852.chunk.js.map"
+    "main.css": "/vedmakSocialNetwork/static/css/main.ac6f5dcf.css",
+    "main.js": "/vedmakSocialNetwork/static/js/main.cd9414e8.js",
+    "static/css/672.fdbb6429.chunk.css": "/vedmakSocialNetwork/static/css/672.fdbb6429.chunk.css",
+    "static/js/672.504f3c1e.chunk.js": "/vedmakSocialNetwork/static/js/672.504f3c1e.chunk.js",
+    "static/css/34.61dd6114.chunk.css": "/vedmakSocialNetwork/static/css/34.61dd6114.chunk.css",
+    "static/js/34.6adc80dc.chunk.js": "/vedmakSocialNetwork/static/js/34.6adc80dc.chunk.js",
+    "static/js/787.9c04a852.chunk.js": "/vedmakSocialNetwork/static/js/787.9c04a852.chunk.js",
+    "static/media/preloader.gif": "/vedmakSocialNetwork/static/media/preloader.ef89d5d218352b376d1b.gif",
+    "static/media/user.jpg": "/vedmakSocialNetwork/static/media/user.83de2ef67fb2c7724d39.jpg",
+    "index.html": "/vedmakSocialNetwork/index.html",
+    "main.ac6f5dcf.css.map": "/vedmakSocialNetwork/static/css/main.ac6f5dcf.css.map",
+    "main.cd9414e8.js.map": "/vedmakSocialNetwork/static/js/main.cd9414e8.js.map",
+    "672.fdbb6429.chunk.css.map": "/vedmakSocialNetwork/static/css/672.fdbb6429.chunk.css.map",
+    "672.504f3c1e.chunk.js.map": "/vedmakSocialNetwork/static/js/672.504f3c1e.chunk.js.map",
+    "34.61dd6114.chunk.css.map": "/vedmakSocialNetwork/static/css/34.61dd6114.chunk.css.map",
+    "34.6adc80dc.chunk.js.map": "/vedmakSocialNetwork/static/js/34.6adc80dc.chunk.js.map",
+    "787.9c04a852.chunk.js.map": "/vedmakSocialNetwork/static/js/787.9c04a852.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac6f5dcf.css",
-    "static/js/main.a179b8a8.js"
+    "static/js/main.cd9414e8.js"
   ]
 }
