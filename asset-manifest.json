@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/vedmakSocialNetwork/static/css/main.ce431d5a.css",
-    "main.js": "/vedmakSocialNetwork/static/js/main.0bfb50c9.js",
-    "static/css/672.fdbb6429.chunk.css": "/vedmakSocialNetwork/static/css/672.fdbb6429.chunk.css",
-    "static/js/672.04f1df3c.chunk.js": "/vedmakSocialNetwork/static/js/672.04f1df3c.chunk.js",
-    "static/css/268.8b32f161.chunk.css": "/vedmakSocialNetwork/static/css/268.8b32f161.chunk.css",
-    "static/js/268.78c0df02.chunk.js": "/vedmakSocialNetwork/static/js/268.78c0df02.chunk.js",
-    "static/js/787.9c04a852.chunk.js": "/vedmakSocialNetwork/static/js/787.9c04a852.chunk.js",
-    "static/media/preloader.gif": "/vedmakSocialNetwork/static/media/preloader.ef89d5d218352b376d1b.gif",
-    "static/media/user.jpg": "/vedmakSocialNetwork/static/media/user.83de2ef67fb2c7724d39.jpg",
-    "index.html": "/vedmakSocialNetwork/index.html",
-    "main.ce431d5a.css.map": "/vedmakSocialNetwork/static/css/main.ce431d5a.css.map",
-    "main.0bfb50c9.js.map": "/vedmakSocialNetwork/static/js/main.0bfb50c9.js.map",
-    "672.fdbb6429.chunk.css.map": "/vedmakSocialNetwork/static/css/672.fdbb6429.chunk.css.map",
-    "672.04f1df3c.chunk.js.map": "/vedmakSocialNetwork/static/js/672.04f1df3c.chunk.js.map",
-    "268.8b32f161.chunk.css.map": "/vedmakSocialNetwork/static/css/268.8b32f161.chunk.css.map",
-    "268.78c0df02.chunk.js.map": "/vedmakSocialNetwork/static/js/268.78c0df02.chunk.js.map",
-    "787.9c04a852.chunk.js.map": "/vedmakSocialNetwork/static/js/787.9c04a852.chunk.js.map"
+    "main.css": "/SergeyPronin70/vedmakSocialNetwork/static/css/main.c27108c2.css",
+    "main.js": "/SergeyPronin70/vedmakSocialNetwork/static/js/main.ee1aa857.js",
+    "static/css/3.e80002a0.chunk.css": "/SergeyPronin70/vedmakSocialNetwork/static/css/3.e80002a0.chunk.css",
+    "static/js/3.65734469.chunk.js": "/SergeyPronin70/vedmakSocialNetwork/static/js/3.65734469.chunk.js",
+    "static/css/784.8ebc3bbc.chunk.css": "/SergeyPronin70/vedmakSocialNetwork/static/css/784.8ebc3bbc.chunk.css",
+    "static/js/784.c4c8e239.chunk.js": "/SergeyPronin70/vedmakSocialNetwork/static/js/784.c4c8e239.chunk.js",
+    "static/js/585.14590517.chunk.js": "/SergeyPronin70/vedmakSocialNetwork/static/js/585.14590517.chunk.js",
+    "static/media/preloader.gif": "/SergeyPronin70/vedmakSocialNetwork/static/media/preloader.ef89d5d218352b376d1b.gif",
+    "static/media/user.jpg": "/SergeyPronin70/vedmakSocialNetwork/static/media/user.83de2ef67fb2c7724d39.jpg",
+    "index.html": "/SergeyPronin70/vedmakSocialNetwork/index.html",
+    "main.c27108c2.css.map": "/SergeyPronin70/vedmakSocialNetwork/static/css/main.c27108c2.css.map",
+    "main.ee1aa857.js.map": "/SergeyPronin70/vedmakSocialNetwork/static/js/main.ee1aa857.js.map",
+    "3.e80002a0.chunk.css.map": "/SergeyPronin70/vedmakSocialNetwork/static/css/3.e80002a0.chunk.css.map",
+    "3.65734469.chunk.js.map": "/SergeyPronin70/vedmakSocialNetwork/static/js/3.65734469.chunk.js.map",
+    "784.8ebc3bbc.chunk.css.map": "/SergeyPronin70/vedmakSocialNetwork/static/css/784.8ebc3bbc.chunk.css.map",
+    "784.c4c8e239.chunk.js.map": "/SergeyPronin70/vedmakSocialNetwork/static/js/784.c4c8e239.chunk.js.map",
+    "585.14590517.chunk.js.map": "/SergeyPronin70/vedmakSocialNetwork/static/js/585.14590517.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce431d5a.css",
-    "static/js/main.0bfb50c9.js"
+    "static/css/main.c27108c2.css",
+    "static/js/main.ee1aa857.js"
   ]
 }
