@@ -1,7 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
-import { Field, InjectedFormProps } from 'redux-form';
+import { InjectedFormProps } from 'redux-form';
 import { reduxForm } from 'redux-form';
 import { login } from '../../redux/auth-reducer';
 import { AppStateType } from '../../redux/redux-store';
@@ -40,18 +40,22 @@ const LoginReduxForm = reduxForm<LoginFormValuesType, LoginFormOwnPropsType>({
     form: 'login'
 })(LoginForm)
 
-const Login: React.FC<MapStatePropsType & MapDispatchPropsType> = (props) => {
+export const LoginPage: React.FC = () => {
+    const captchaUrl = useSelector((state: AppStateType) => state.auth.captchaUrl)
+    const isAuth = useSelector((state: AppStateType) => state.auth.isAuth)
+    const dispatch = useDispatch()
+    
     const onSubmit = (formData: LoginFormValuesType) => {
-        props.login(formData.email, formData.password, formData.rememberMe, formData.captcha);
+        dispatch(login(formData.email, formData.password, formData.rememberMe, formData.captcha))
     }
 
-    if (props.isAuth) {
+    if (isAuth) {
         return <Navigate to='/profile' />
     }
     
     return <div>
         <h1>LOGIN</h1>
-        <LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl} />
+        <LoginReduxForm onSubmit={onSubmit} captchaUrl={captchaUrl} />
         <div>
             <b>For testing use:</b>
         Email: free@samuraijs.com
@@ -60,24 +64,11 @@ const Login: React.FC<MapStatePropsType & MapDispatchPropsType> = (props) => {
     </div>
 }
 
-const mapStateToProps = (state: AppStateType ): MapStatePropsType => ({
-    captchaUrl: state.auth.captchaUrl,
-    isAuth: state.auth.isAuth
-})
-
-export default connect(mapStateToProps, { login }) (Login);
-
 
 type LoginFormOwnPropsType = {
     captchaUrl: string | null
 }
-type MapStatePropsType = {
-    captchaUrl: string | null
-    isAuth: boolean
-}
-type MapDispatchPropsType = {
-    login: (email: string, password: string, rememberMe: boolean, captcha: any) => void
-}
+
 export type LoginFormValuesType = {
     email: string
     password: string

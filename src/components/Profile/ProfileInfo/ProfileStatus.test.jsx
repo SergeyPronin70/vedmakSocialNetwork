@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { create } from "react-test-renderer";
 import ProfileStatus from "./ProfileStatus";

@@ -13,4 +13,5 @@ export default MyButton;
 
 interface PropsInterface {
     children: any
+    onClick?: () => void
 }

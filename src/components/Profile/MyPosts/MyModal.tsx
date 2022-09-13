@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './MyModal.module.css'
 
-const MyModal = ({ children, visible, setVisible }) => {
+const MyModal: React.FC<PropsType> = ({ children, visible, setVisible }) => {
 
     const rootClasses = [styles.myModal]
     if (visible) {
@@ -20,3 +20,9 @@ const MyModal = ({ children, visible, setVisible }) => {
 }
 
 export default MyModal;
+
+type PropsType = {
+    children: any
+    visible: boolean
+    setVisible: (visible: boolean) => void
+}

@@ -8,7 +8,6 @@ import MySelect from '../../common/MySelect';
 import { useState } from 'react';
 import { useMemo } from 'react';
 import MyModal from './MyModal';
-import './Transition.module.css'
 import PostList from './Post/PostList';
 import MyButton from '../../common/MyButton';
 import MyInput from '../../common/MyInput';
@@ -61,6 +60,7 @@ useObserver(lastElement, props.currentPage < 11, props.isFetching, () => {props.
         <MyModal visible={modal} setVisible={setModal} >
           <AddNewPostRedux
             onSubmit={onAddPost}
+            //@ts-ignore
             newPostText={props.newPostText}
             newTitle={props.newTitle} />
         </MyModal>
@@ -75,13 +75,14 @@ useObserver(lastElement, props.currentPage < 11, props.isFetching, () => {props.
           />
         </div>
         <div style={{ width: '200px', margin: '15px' }}>
-          <MyInput value={searchQuery} onChange={e => setSearchQuery(e.target.value)} placeholder='Search...' />
+          <MyInput value={searchQuery} onChange={(e: any) => setSearchQuery(e.target.value)} placeholder='Search...' />
         </div>
       </div>
 
      <MySelect 
      value={props.pageSize}
-     onChange={(value: number) => props.setPageSize(value)}
+     //@ts-ignore
+     onChange={(value) => props.setPageSize(value)}
      defaultValue="Count of posts on page"
      options={[
       {value: 5, name: '5'},
@@ -91,7 +92,10 @@ useObserver(lastElement, props.currentPage < 11, props.isFetching, () => {props.
      ]} />
 
       <PostList posts={sortedAndSearchedPosts} remove={props.deletePost} />
-      <div ref={ lastElement } style={{ height: '20px' }} />
+      
+      <div 
+      //@ts-ignore
+      ref={ lastElement } style={{ height: '20px' }} />
       {props.isFetching &&
         <div style={{ display: 'flex', justifyContent: 'center' }}><Loader /></div>
       }

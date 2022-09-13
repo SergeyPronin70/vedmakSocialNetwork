@@ -103,7 +103,7 @@ const profileReducer = (state = initialState, action: ActionsTypes): InitialStat
 
 export const actions = {
     addPostActionCreator: (newPostText: string, newTitle: string) => ({ type: 'ADD_POST', newPostText, newTitle } as const),
-    sortPostsActionCreator: (sort: string) => ({ type: 'SORT_POSTS', sort } as const),
+    sortPostsActionCreator: (sort: keyof PostType) => ({ type: 'SORT_POSTS', sort } as const),
     searchPost: (search: string) => ({ type: 'SEARCH_POST', search } as const),
     setUserProfile: (profile: ProfileType) => ({ type: 'SET_USER_PROFILE', profile } as const),
     setStatus: (status: string) => ({ type: 'SET_STATUS', status } as const),
@@ -119,7 +119,7 @@ export const getPostList = (pageSize: number, page: number): ThunkType => async 
     dispatch(actions.toggleIsFetching(true));
     dispatch(actions.setCurrentPage(page));
     let response = await profileAPI.getPosts(pageSize, page)
-    const totalCountOfPost = response.headers['x-total-count'];
+    const totalCountOfPost: number = Number.parseInt(response.headers['x-total-count']);
     dispatch(actions.toggleIsFetching(false));
     dispatch(actions.setPosts(response.data, totalCountOfPost));
     //dispatch(setTotalPostCount(totalCountOfPost));

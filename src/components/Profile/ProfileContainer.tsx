@@ -22,9 +22,10 @@ type PropsType = MapPropsType & DispatchPropsType & HistoryRouterProps & Params
 class ProfileContainer extends React.Component< PropsType> {
  
 refreshProfile () {
-  let userId = this.props?.match?.params.userId;
+  let userId = this.props?.match;
     
    if (!userId) {
+    //@ts-ignore
      userId = this.props.authorizedUserId;
      if (!userId) {
        this.props.history.push('/login')
@@ -33,7 +34,9 @@ refreshProfile () {
    if (!userId) {
     console.error('ID should exists')
    } else {
+    //@ts-ignore
    this.props.getUserProfile(userId);
+   //@ts-ignore
    this.props.getStatus(userId)
    }
 }
@@ -44,7 +47,7 @@ refreshProfile () {
   }
 
   componentDidUpdate(prevProps: PropsType, prevState: PropsType) {
-    if (this.props?.match?.params.userId != prevProps.match?.params.userId) {
+    if (this.props?.match != prevProps.match) {
     this.refreshProfile();
     }
   }
@@ -52,7 +55,7 @@ refreshProfile () {
   render() {
     return ( 
         <Profile {...this.props} 
-        isOwner={!this.props?.match?.params.userId}
+        isOwner={!this.props?.match}
         profile={this.props.profile} 
         status={this.props.status} 
         updateStatus={this.props.updateStatus} 
@@ -74,7 +77,7 @@ function withRouter<WCP> (Component: React.FC<WCP>) {
     //может использовать useParams?
 
      //const match = useParams()
-     const match = useMatch('/profile/:userId')
+     const match = useMatch('/profile/:userId')?.params.userId 
      return <Component {...props} match={match} />
    }
    return RouterComponent;

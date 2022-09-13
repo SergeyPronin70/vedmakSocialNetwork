@@ -14,8 +14,8 @@ const jsonPlaceHolderInstance = axios.create({
 })
 
 export const usersAPI = {
-    getUsers(page = 1, pageSize = 10) {
-        return instance.get<GetItemsType>(`users?page=${page}&count=${pageSize}`)
+    getUsers(page = 1, pageSize = 10, term: string ='', friend: null | boolean = null) {
+        return instance.get<GetItemsType>(`users?page=${page}&count=${pageSize}&term=${term}`+(friend===null ? '' : `&friend=${friend}`))
             .then(response => {
                 return response.data
             })
@@ -56,8 +56,10 @@ export const profileAPI = {
         }
        }) 
     },
-    getPostById(id: number) {
-       return jsonPlaceHolderInstance.get(`posts/${id}`)
+    getPostById(id: string | undefined) {
+        if (id) {
+            return jsonPlaceHolderInstance.get(`posts/${id}`)
+        }
     },
     getPostCommentsById(id: number) {
        return jsonPlaceHolderInstance.get(`posts/${id}/comments`)
@@ -97,7 +99,7 @@ export enum ResultCodesForCaptcha {
     CaptchaIsRequired = 10
 }
 
-type ResponseType<D = {}, RC = ResultCodesEnum> = {
+export type ResponseType<D = {}, RC = ResultCodesEnum> = {
     data: D
     messages: Array<string>
     resultCode: RC

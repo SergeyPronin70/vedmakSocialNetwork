@@ -22,7 +22,9 @@ const Profile: React.FC<PropsType> = (props) => {
       status={props.status}
       updateStatus={props.updateStatus}
       saveProfile={props.saveProfile} />
-    <MyPostsContainer profile={props.profile} />
+    <MyPostsContainer 
+    //@ts-ignore
+    profile={props.profile} />
   </>)
 
 }

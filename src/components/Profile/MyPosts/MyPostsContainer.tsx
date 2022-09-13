@@ -29,7 +29,7 @@ let mapStateToProps = (state: AppStateType) => {
   }
 }
 
-
+//@ts-ignore
 const MyPostsContainer = connect<MapPropsType, DispatchPropsType, {}, AppStateType>
 (mapStateToProps, {addPostActionCreator, sortPostsActionCreator, searchPost, setUserProfile,
   setStatus,  deletePost,  savePhotoSuccess,  setPosts,  setPageSize,  setCurrentPage,  toggleIsFetching, getPostList})

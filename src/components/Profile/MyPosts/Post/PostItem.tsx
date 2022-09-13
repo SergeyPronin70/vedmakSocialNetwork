@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { PostType } from "src/types/types";
 import MyButton from "../../../common/MyButton";
 import classes from './PostItem.module.css'
 
@@ -31,7 +32,7 @@ const PostItem: React.FC<PropsType> = ({post, number, remove}) => {
 export default PostItem;
 
 type PropsType = {
-    post: {id: number, title: string, body: string}
+    post: PostType
     number: number
     remove: (id: number) => void
 }

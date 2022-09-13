@@ -9,8 +9,12 @@
 
 .loginBlock {
   float: right;
+  
 }
 
 .loginBlock a {
+  color: white;
+}
+.loginBlockName {
   color: white;
 }

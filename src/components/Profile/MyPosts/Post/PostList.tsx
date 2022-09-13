@@ -32,7 +32,7 @@ export default PostList;
 
 type PropsType = {
     posts: Array<PostType>
-    title: string
+    title?: string
 
 }
 type DispatchType = {

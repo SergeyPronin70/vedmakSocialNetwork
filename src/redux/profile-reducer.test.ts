@@ -1,3 +1,4 @@
+// @ts-nocheck
 import profileReducer, { actions } from "./profile-reducer";
 import React from 'react';
 import { render, screen } from '@testing-library/react';

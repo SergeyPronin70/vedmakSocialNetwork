@@ -26,6 +26,7 @@ export const Input: React.FC<WrappedFieldProps> = (props) => {
     //const {input, meta, child, ...restProps} = props;
     const { input, meta, ...restProps } = props;
     return (
+        //@ts-ignore
         <FormControl {...props}><MyInput  {...input} {...restProps} /></FormControl>
     )
 }

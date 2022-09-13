@@ -7,22 +7,29 @@ import { profileAPI } from "../../../../api/api";
 import { useFetching } from "../../../common/hooks/useFetching";
 import { Loader } from "../../../common/preloader/Loader";
 
-const PostPage: React.FC<PropsType> = (props) => {
+const PostPage: React.FC = (props) => {
+    
     const params = useMatch('/profile/posts/:id')
-    const [post, setPost] = useState({});
-    const [comments, setComments] = useState([]);
+    const [post, setPost] = useState<any>({});
+    const [comments, setComments] = useState<any>([]);
     const [fetchPostById, isLoading, error] = useFetching(async () => {
-        const response = await profileAPI.getPostById(params.params.id);
-        setPost(response.data)
+        if (params) {
+            const response = await profileAPI.getPostById(params.params.id);
+            response && setPost(response.data) 
+        }
+        
     })
     const [fetchPostCommentsById, isCommentsLoading, commentsError] = useFetching(async () => {
+        //@ts-ignore
         const response = await profileAPI.getPostCommentsById(params.params.id);
         setComments(response.data)
     })
 
 
     useEffect(() => {
+        //@ts-ignore
         fetchPostById()
+        //@ts-ignore
         fetchPostCommentsById()
     }, [])
 
@@ -40,7 +47,7 @@ const PostPage: React.FC<PropsType> = (props) => {
             {isCommentsLoading
             ? <Loader />
         : <div style={{paddingLeft: '30px'}}>
-            {comments.map(comm => 
+            {comments.map((comm: any): any => 
                <div>
                 <h5> {comm.email} </h5>
                 <div> {comm.body} </div>
@@ -54,5 +61,11 @@ export default PostPage;
 
 type PropsType = {
     post: PostType
+    comments: Array<{email: string, body: string}>  
+}
+interface PostInterface {
+    post: PostType
+}
+interface CommentsInterface {
     comments: Array<{email: string, body: string}>
 }

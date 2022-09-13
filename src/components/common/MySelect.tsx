@@ -21,8 +21,8 @@ const MySelect: React.FC<PropsType> = ({ options, defaultValue, value, onChange 
 export default MySelect;
 
 type PropsType = {
-    options: Array<{value: string, name: string}>
+    options: Array<{value: number | string, name: string}>
     defaultValue: string
-    value: string
+    value: string | number
     onChange: (value: string) => void
 }
